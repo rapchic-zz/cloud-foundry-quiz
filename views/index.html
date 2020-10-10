@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center">
+        <h2>Quiz - Cloud Foundry Summit Europe, 2020</h2>
+        <!-- <p class="lead">Answer these multiple choice questions to earn goodies!</p> -->
+        </div>
+        <form method="POST" action="/quizsubmission">
+        <p class="lead"></p>
+
+        Enter your Email ID:<br/>
+        <input type="text" id="cloudemail" name="cloudemail" class="form-control" placeholder="Please enter your IBM Cloud Email ID" required>
+        <br/>
+
+        1. Which of the following type of virtualization is also characteristic of cloud computing?<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_1" id="quiz_1" value="a"> Storage
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_1" id="quiz_1" value="b"> Application
+        </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="quiz_1" id="quiz_1" value="c"> CPU
+          </label>
+          </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="quiz_1" id="quiz_1" value="d" required> All of the above
+          </label>
+          </div>
+        <br/>
+
+        2. The technology used to distribute service requests to resources is referred to as:<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_2" id="quiz_2" value="a" required> Load balancing
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_2" id="quiz_2" value="b"> Load scheduling
+        </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="quiz_2" id="quiz_2" value="c"> Load performing
+          </label>
+          </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="quiz_2" id="quiz_2" value="d"> Triggering
+          </label>
+          </div>
+        <br/>
+
+        3. At its core, Kubernetes is a platform for:<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="a"> Provisioning machines (similar to Puppet, Ansible)
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="b"> Packaging software in containers
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="c"> Running VMs on bare metal
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="d" required> Running and scheduling container applications on a cluster
+        </label>
+        </div>
+        <br/>
+
+        4. What can you deploy on Kubernetes??<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_4" id="quiz_4" value="a"> Virtual Machines
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_4" id="quiz_4" value="b"> System processes (like sshd, httpd)
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_4" id="quiz_4" value="c"> Others
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_4" id="quiz_4" value="d" required> Containers
+        </label>
+        </div>
+        <br/>
+
+
+        5. What type of build strategies are used in OpenShift ?<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_5" id="quiz_5" value="a"> Docker Strategy
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_5" id="quiz_5" value="b"> Custom Strategy
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_5" id="quiz_5" value="c"> Pipeline Strategy
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_5" id="quiz_5" value="d"> Source-to-image Strategy
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_5" id="quiz_5" value="e" required> All of the above
+        </label>
+        </div>
+        <!-- <br/> -->
+        <br/>
+
+        <!-- <br/> -->
+        <!-- <br/> -->
+            <div class="checkbox">
+            <label>
+      		<input type="checkbox" name="interested" value="Yes" checked>&nbsp;IBM may use my contact data to keep me informed of products, services and offerings.
+   			</label>
+ 			</div>
+        <br/>
+        <input type="submit" value="Submit Quiz" class="btn btn-primary btn-lg"/>
+        </form>
+      <br/><br/>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 IBM India Pvt Ltd</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../public/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
