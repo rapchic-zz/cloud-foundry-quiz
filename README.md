@@ -23,5 +23,3 @@
 5. Attempt the Quiz in the deployed app and submit the response to view your score!
 
    ![toolchain-pipeline](doc/images/3.png)
-
-hello
