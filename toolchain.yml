@@ -4,7 +4,7 @@
     service_id: githubprivate
     parameters:
       repo_name: '{{toolchain.name}}'
-      repo_url: 
+      repo_url: 'https://github.com/rapchic/cloud-foundry-quiz'
       type: clone
       has_issues: true
       enable_traceability: true
